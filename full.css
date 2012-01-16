@@ -1,0 +1,27 @@
+body {font-family: 'Open Sans', sans-serif;font-size:90%;}
+body { -webkit-animation: bugfix infinite 1s; }
+@-webkit-keyframes bugfix { from { padding: 0; } to { padding: 0; } }
+fieldset {margin: 20px;position:relative;}
+input[type="checkbox"],input[type="radio"] {visibility:hidden;position:absolute;}
+legend, label {background-image:-webkit-gradient(linear, left top, left bottom, from( rgba(255,255,255,.5) ), to( rgba(255,255,255,0) ));background-image:-moz-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%);background-image:-o-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%);font: 12px/1em 'Droid Sans', sans-serif;font-weight: bold;padding:12px;text-shadow: rgba(255,255,255,.5) 0 2px 0;}
+input[class="red"] + label {background-color: hsl(0, 100%, 50%);color: hsl(0, 100%,30%) !important;box-shadow:0px 8px 0px 0px hsl(0, 100%, 30%);}
+input[class="red"] + label:hover,input[class="red"]:checked + label {background-color: hsl(0, 100%, 45%);}
+input[class="orange"] + label  {background-color: hsl(30,100%, 55%);color: hsl(30, 100%,40%) !important;box-shadow:0px 8px 0px 0px hsl(30, 100%, 30%);}
+input[class="orange"] + label:hover,input[class="orange"]:checked + label  {background-color: hsl(30,100%, 50%);}
+input[class="yellow"] + label {background-color: hsl(50, 100%, 50%);color: hsl(50, 100%,30%) !important;box-shadow:0px 8px 0px 0px hsl(50, 100%, 30%);}
+input[class="yellow"] + label:hover,input[class="yellow"]:checked + label {background-color: hsl(50, 100%, 48%);}
+input[class="green"] + label {background-color: hsl(88, 70%, 60%);color: hsl(88, 70%, 30%) !important;box-shadow:0px 8px 0px 0px hsl(88, 100%, 30%);}
+input[class="green"] + label:hover,input[class="green"]:checked + label {background-color: hsl(88, 70%, 50%);}
+input[class="blue"] + label {background-color: hsl(208, 100%, 75%);color: hsl(208, 50%, 40%) !important;box-shadow:0px 8px 0px 0px hsl(208, 100%, 30%);}
+input[class="blue"] + label:hover,input[class="blue"]:checked + label {background-color: hsl(208, 100%, 70%);}
+input[class="indigo"] + label {background-color: hsl(248, 100%, 75%);color: hsl(238, 30%, 40%) !important;box-shadow:0px 8px 0px 0px hsl(238, 100%, 30%);}
+input[class="indigo"] + label:hover,input[class="indigo"]:checked + label {background-color: hsl(248, 100%, 70%);}
+input[class="grey"] + label {background-color: hsl(64, 2%, 85%);color: hsl(64, 2%, 40%) !important;box-shadow:0px 8px 0px 0px hsl(64, 2%, 30%);}
+input[class="grey"] + label:hover,input[class="grey"]:checked + label {background-color: hsl(64, 2%, 70%);}
+legend + input:checked + label,input + label + input:checked + label {margin-top:6px;box-shadow:0px 2px 0px 0px #333,4px 0 6px -3px rgba(0,0,0,.6) inset;
+   border-left:solid 1px #777;}
+input:checked + label + input:checked + label {margin-top:6px;box-shadow:0px 2px 0px 0px #333 !important;}
+label {cursor:pointer;border: solid 1px #999;border-bottom:none;margin-right:-1px;float:left;-webkit-transition:all .08s ease-in-out;-moz-transition: all .08s ease-in-out;-o-transition: all .08s ease-in-out;}
+legend {background-color: hsl(64,2%, 20%);color: hsl(255, 100%,100%) !important;box-shadow:0px 8px 0px 0px #000;text-shadow: rgba(0,0,0,1) 0 2px 0;float:left;margin-right:-1px;color:#ededed;border-radius:4px 0 0 4px;border-bottom:solid 1px #333;}
+label:last-child {border-radius: 0 4px 4px 0;border-right:solid 1px #888;}
+legend + input + label, legend + input:checked + label {border-left:1px solid #333;}
